@@ -34,7 +34,7 @@ body.append(p);
 fetch('https:/swapi.dev/api/starships/')
 	.then(res => res.json())
 	.then(res => {
-		ships = starship.results;
+		ships = res.results;
 
 		if (ships && ships.length)
 			button.removeAttribute('disabled');
