@@ -1,5 +1,5 @@
 function randomShipName(ships) {
-	const index = Math.floor(Math.random() * (ships.length)),
+	const index = Math.floor(Math.random() * ships.length),
 		ship = ships[index];
 
 	if (ship)
